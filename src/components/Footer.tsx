@@ -28,11 +28,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <Link href="/" className="inline-block mb-8">
-              <div className="relative h-64 w-full max-w-lg bg-white/5 rounded-2xl p-4">
+              <div className="relative w-48 h-48 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
                  <img
                   src="/images/KLL.png"
                   alt="KasperLift"
-                  className="object-contain w-full h-full"
+                  className="object-contain w-full h-full p-2"
                 />
               </div>
             </Link>

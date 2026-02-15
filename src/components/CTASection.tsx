@@ -41,7 +41,7 @@ export default function CTASection() {
           </div>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 text-accent-light/90">
-            <div>Mon-Fri: 09:00 - 18:00</div>
+            <div>B.e - Cümə: 09:00 - 18:00</div>
           </div>
         </div>
       </div>
