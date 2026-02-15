@@ -93,7 +93,7 @@ export default function Hero() {
               <div className="relative bg-gradient-to-br from-accent-light/20 to-accent-light/5 rounded-3xl p-2 shadow-2xl">
                 <div className="aspect-[4/3] relative rounded-2xl overflow-hidden shadow-inner">
                   <img 
-                    src="/images/99.png" 
+                    src="/images/1.jpeg" 
                     alt="Modern Elevator" 
                     className="object-cover w-full h-full"
                   />
