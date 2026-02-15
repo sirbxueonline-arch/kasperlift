@@ -29,12 +29,12 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+          ? "bg-primary/95 backdrop-blur-md shadow-lg"
+          : "bg-primary/30 backdrop-blur-sm"
       }`}
     >
       {/* Top bar */}
-      <div className="bg-primary text-white py-2 hidden md:block">
+      <div className="bg-primary-light text-white py-2 hidden md:block border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <span>Mon-Fri: 09:00 - 18:00</span>
@@ -71,10 +71,10 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-primary hover:text-accent font-medium transition-colors relative group"
+                  className="text-white hover:text-accent-light font-medium transition-colors relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent-light transition-all duration-300 group-hover:w-full" />
                 </Link>
               ))}
             </div>
@@ -92,14 +92,14 @@ export default function Header() {
 
             {/* Mobile menu button */}
             <button
-              className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <X className="w-6 h-6 text-primary" />
+                <X className="w-6 h-6 text-white" />
               ) : (
-                <Menu className="w-6 h-6 text-primary" />
+                <Menu className="w-6 h-6 text-white" />
               )}
             </button>
           </div>
@@ -107,7 +107,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <div
-          className={`lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl transition-all duration-300 ${
+          className={`lg:hidden absolute top-full left-0 right-0 bg-primary shadow-xl transition-all duration-300 ${
             isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
@@ -116,7 +116,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block text-lg font-medium text-primary hover:text-accent transition-colors py-2"
+                className="block text-lg font-medium text-white hover:text-accent-light transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
@@ -129,9 +129,9 @@ export default function Header() {
             >
               Qiymət Al
             </Link>
-            <div className="pt-4 border-t border-gray-100">
-              <a href="tel:+994502096440" className="flex items-center text-primary py-2">
-                <Phone className="w-5 h-5 mr-2 text-accent" />
+            <div className="pt-4 border-t border-white/10">
+              <a href="tel:+994502096440" className="flex items-center text-white py-2">
+                <Phone className="w-5 h-5 mr-2 text-accent-light" />
                 +994 50 209 64 40
               </a>
             </div>

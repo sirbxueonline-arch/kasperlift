@@ -17,12 +17,11 @@ const pdfCertificates = [
 ];
 
 const partners = [
-  { name: "Otis", country: "ABŞ" },
-  { name: "Kone", country: "Finlandiya" },
-  { name: "Schindler", country: "İsveçrə" },
-  { name: "Mitsubishi", country: "Yaponiya" },
-  { name: "ThyssenKrupp", country: "Almaniya" },
-  { name: "Hyundai", country: "Koreya" },
+  { name: "Fuji Global", logo: "/images/1.jpeg" },
+  { name: "United Fuji", logo: "/images/2.jpeg" },
+  { name: "Agustin Electric", logo: "/images/3.jpeg" },
+  { name: "Yuspa Asansor", logo: "/images/4.jpeg" },
+  { name: "Pasa Asansor", logo: "/images/5.jpeg" },
 ];
 
 export default function CertificatesPage() {
@@ -103,17 +102,19 @@ export default function CertificatesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-center">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow"
+                className="bg-white rounded-2xl p-6 flex items-center justify-center shadow-sm hover:shadow-lg transition-all duration-300 group h-32"
               >
-                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent-light/20 to-accent-light/5 rounded-xl flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-accent">{partner.name[0]}</span>
+                <div className="relative w-full h-full">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
                 </div>
-                <h3 className="font-semibold text-primary mb-1">{partner.name}</h3>
-                <p className="text-sm text-gray-500">{partner.country}</p>
               </div>
             ))}
           </div>
