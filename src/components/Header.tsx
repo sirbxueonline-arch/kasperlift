@@ -55,10 +55,10 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="flex items-center -my-4">
-              <div className="relative h-20 w-64">
+            <Link href="/" className="flex items-center -my-6">
+              <div className="relative h-28 w-80">
                 <img
-                  src="/images/logo.png"
+                  src="/images/KLL.png"
                   alt="KasperLift"
                   className="object-contain w-full h-full"
                 />

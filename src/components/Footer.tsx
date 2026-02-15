@@ -27,10 +27,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <Link href="/" className="inline-block mb-6">
-              <div className="relative h-40 w-96 bg-white/5 rounded-lg p-2">
+            <Link href="/" className="inline-block mb-8">
+              <div className="relative h-64 w-full max-w-lg bg-white/5 rounded-2xl p-4">
                  <img
-                  src="/images/logo.png"
+                  src="/images/KLL.png"
                   alt="KasperLift"
                   className="object-contain w-full h-full"
                 />
