@@ -45,8 +45,8 @@ export default function ServicesOverview() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4">Xidmətlərimiz</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
+          <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">Xidmətlərimiz</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
             Hərtərəfli Xidmət
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -61,11 +61,11 @@ export default function ServicesOverview() {
               key={index}
               className="group bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100"
             >
-              <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-blue-600/20">
+              <div className="w-14 h-14 bg-accent text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-accent/20">
                 <service.icon className="w-7 h-7" />
               </div>
 
-              <h3 className="text-xl font-bold text-[#0f172a] mb-3">
+              <h3 className="text-xl font-bold text-primary mb-3">
                 {service.title}
               </h3>
 
@@ -76,7 +76,7 @@ export default function ServicesOverview() {
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-sm text-gray-600">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2" />
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
                     {feature}
                   </li>
                 ))}
@@ -88,7 +88,7 @@ export default function ServicesOverview() {
         <div className="mt-12 text-center">
           <Link
             href="/services"
-            className="inline-flex items-center bg-[#0f172a] hover:bg-[#1e293b] text-white px-8 py-4 rounded-full font-semibold transition-colors"
+            className="inline-flex items-center bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-full font-semibold transition-colors"
           >
             Xidmətlərimiz haqqında ətraflı
             <ArrowRight className="w-5 h-5 ml-2" />

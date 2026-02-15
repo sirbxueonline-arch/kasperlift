@@ -3,7 +3,7 @@ import { ArrowRight, Phone, Mail } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-accent to-primary relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10"
         style={{
@@ -17,7 +17,7 @@ export default function CTASection() {
             Layihəniz üçün Pulsuz Konsultasiya
           </h2>
 
-          <p className="text-blue-100 text-lg mb-10 leading-relaxed">
+          <p className="text-accent-light/90 text-lg mb-10 leading-relaxed">
             Lift və ya eskalator sistemləri ilə bağlı suallarınız var? Peşəkar komandamız
             sizə optimal həllər təklif etmək üçün hazırdır. Bizimlə əlaqə saxlayın.
           </p>
@@ -25,7 +25,7 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="group bg-white text-blue-700 px-8 py-4 rounded-full font-bold transition-all hover:shadow-xl flex items-center"
+              className="group bg-white text-accent px-8 py-4 rounded-full font-bold transition-all hover:shadow-xl flex items-center"
             >
               Qiymət Sorğusu Göndər
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -33,14 +33,14 @@ export default function CTASection() {
 
             <a
               href="tel:+994502096440"
-              className="group bg-blue-700/50 hover:bg-blue-700/70 text-white border border-white/30 px-8 py-4 rounded-full font-bold transition-all flex items-center backdrop-blur-sm"
+              className="group bg-accent/50 hover:bg-accent/70 text-white border border-white/30 px-8 py-4 rounded-full font-bold transition-all flex items-center backdrop-blur-sm"
             >
               <Phone className="w-5 h-5 mr-2" />
               +994 50 209 64 40
             </a>
           </div>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 text-blue-100">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 text-accent-light/90">
             <div>Mon-Fri: 09:00 - 18:00</div>
           </div>
         </div>

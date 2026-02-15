@@ -53,11 +53,11 @@ export default function ProductsPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16">
           <div className="mb-8 lg:mb-0">
-            <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4">Məhsullarımız</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
+            <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">Məhsullarımız</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
               Lift və Eskalator
               <br />
-              <span className="text-blue-600">Sistemləri</span>
+              <span className="text-accent">Sistemləri</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-xl">
               Bütün ehtiyaclara uyğun geniş məhsul çeşidi - sərnişin liftlərindən
@@ -66,7 +66,7 @@ export default function ProductsPreview() {
           </div>
           <Link
             href="/products"
-            className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-colors self-start lg:self-auto"
+            className="inline-flex items-center bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-full font-semibold transition-colors self-start lg:self-auto"
           >
             Bütün Məhsullar
             <ArrowRight className="w-5 h-5 ml-2" />
@@ -88,13 +88,13 @@ export default function ProductsPreview() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <div className="p-2 bg-blue-600 rounded-lg w-fit mb-2">
+                  <div className="p-2 bg-accent rounded-lg w-fit mb-2">
                     <product.icon className="w-6 h-6" />
                   </div>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#0f172a] mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
                   {product.title}
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -104,7 +104,7 @@ export default function ProductsPreview() {
                   {product.features.map((feature, idx) => (
                     <span
                       key={idx}
-                      className="text-xs bg-blue-50 text-blue-700 px-3 py-1 rounded-full"
+                      className="text-xs bg-accent/5 text-accent px-3 py-1 rounded-full"
                     >
                       {feature}
                     </span>

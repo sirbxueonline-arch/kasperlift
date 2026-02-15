@@ -1,84 +1,18 @@
 import Link from "next/link";
-import { ChevronRight, Award, Shield, CheckCircle, FileCheck, Globe, Star } from "lucide-react";
+import { ChevronRight, Award, Shield, CheckCircle, FileCheck, Globe, Star, ArrowUpRight } from "lucide-react";
 
-const certificates = [
+const pdfCertificates = [
   {
-    id: "iso",
-    icon: FileCheck,
-    title: "ISO 9001:2015",
-    category: "Keyfiyyət İdarəetmə",
-    description: "Beynəlxalq standartlara uyğun keyfiyyət idarəetmə sistemi sertifikatı. Bütün proseslərimiz ISO 9001:2015 tələblərinə cavab verir.",
-    details: [
-      "Müştəri mərkəzli yanaşma",
-      "Proses əsaslı idarəetmə",
-      "Davamlı təkmilləşdirmə",
-      "Maddi və insan resurslarının idarə edilməsi",
-    ],
+    id: "limb-0156",
+    title: "LIMB.0156 CERTIFICATE",
+    file: "/LIMB.0156 CERTIFICATE.pdf",
+    description: "Uyğunluq Sertifikatı",
   },
   {
-    id: "ce",
-    icon: Shield,
-    title: "CE Marking",
-    category: "Avropa Standartları",
-    description: "Avropa İttifaqının təhlükəsizlik, sağlamlıq və ətraf mühitin qorunması tələblərinə uyğunluq sertifikatı.",
-    details: [
-      "Məhsul təhlükəsizliyi",
-      "Sənaye standartlarına uyğunluq",
-      "Texniki sənədləşmə",
-      "Risk qiymətləndirməsi",
-    ],
-  },
-  {
-    id: "en81",
-    icon: CheckCircle,
-    title: "EN 81 Standartları",
-    category: "Lift Təhlükəsizliyi",
-    description: "Liftlərin konstruksiyası və quraşdırılması üçün Avropa standartları. EN 81-1 və EN 81-2 standartlarına tam uyğunluq.",
-    details: [
-      "Konstruksiya təhlükəsizliyi",
-      "Elektrik təhlükəsizliyi",
-      "Fəaliyyət qaydaları",
-      "Yoxlama və test prosedurları",
-    ],
-  },
-  {
-    id: "tuv",
-    icon: Award,
-    title: "TÜV Sertifikatı",
-    category: "Texniki Nəzarət",
-    description: "Alman TÜV şirkətindən keyfiyyət və təhlükəsizlik sertifikatı. Avropanın ən nüfuzlu sertifikasiya orqanlarından biri.",
-    details: [
-      "Texniki yoxlama",
-      "Keyfiyyətə nəzarət",
-      "Təhlükəsizlik qiymətləndirməsi",
-      "Məhsul testləri",
-    ],
-  },
-  {
-    id: "gost",
-    icon: Globe,
-    title: "GOST-R",
-    category: "Rusiya Standartları",
-    description: "Rusiya və MDB ölkələri üçün dövlət standartlarına uyğunluq sertifikatı. Texniki tənzimləmə sənədləri.",
-    details: [
-      "Məhsul keyfiyyəti",
-      "Texniki sənədlər",
-      "İstehsalat nəzarəti",
-      "Standartlaşdırma",
-    ],
-  },
-  {
-    id: "uz",
-    icon: Star,
-    title: "UZ Standart",
-    category: "Özbəkistan Standartları",
-    description: "Özbəkistan Respublikasının standartlaşdırma və sertifikatlaşdırma orqanının təsdiqlədiyi sertifikat.",
-    details: [
-      "Milli standartlara uyğunluq",
-      "Texniki tənzimləmə",
-      "Məhsul sertifikatlaşdırma",
-      "Keyfiyyətə nəzarət",
-    ],
+    id: "limb-0157",
+    title: "LIMB.0157 CERTIFICATE",
+    file: "/LIMB.0157 CERTIFICATE.pdf",
+    description: "Uyğunluq Sertifikatı",
   },
 ];
 
@@ -95,17 +29,17 @@ export default function CertificatesPage() {
   return (
     <div className="min-h-screen pt-32">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-accent to-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <nav className="flex items-center text-sm text-blue-100 mb-6">
+            <nav className="flex items-center text-sm text-accent-light/90 mb-6">
               <Link href="/" className="hover:text-white transition-colors">Ana Səhifə</Link>
               <ChevronRight className="w-4 h-4 mx-2" />
               <span className="text-white">Sertifikatlar</span>
             </nav>
 
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">Sertifikatlar</h1>
-            <p className="text-xl text-blue-100 leading-relaxed">
+            <p className="text-xl text-accent-light/90 leading-relaxed">
               Beynəlxalq standartlara uyğun keyfiyyət və təhlükəsizlik sertifikatları.
               Hər bir məhsul və xidmətimiz sertifikatlaşdırılmışdır.
             </p>
@@ -117,40 +51,39 @@ export default function CertificatesPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4">Beynəlxalq Standartlar</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
-              Keyfiyyət Sertifikatlarımız
+            <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">Rəsmi Sənədlər</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+              Sertifikatlarımız
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Bütün məhsul və xidmətlərimiz beynəlxalq standartlara uyğunluq
-              sertifikatları ilə təchiz edilib.
+              Şirkətimizin fəaliyyətini və məhsullarının keyfiyyətini təsdiq edən rəsmi sənədlər.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certificates.map((cert) => (
-              <div
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {pdfCertificates.map((cert) => (
+              <a
                 key={cert.id}
-                className="group bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100"
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 flex flex-col items-center text-center"
               >
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <cert.icon className="w-8 h-8" />
+                <div className="w-20 h-20 bg-accent/10 text-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform group-hover:bg-accent group-hover:text-white">
+                  <FileCheck className="w-10 h-10" />
                 </div>
 
-                <div className="text-sm text-blue-600 font-semibold mb-2">{cert.category}</div>
-
-                <h3 className="text-xl font-bold text-[#0f172a] mb-3">{cert.title}</h3>
+                <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                  {cert.title}
+                </h3>
 
                 <p className="text-gray-600 mb-6">{cert.description}</p>
 
-                <ul className="space-y-2">
-                  {cert.details.map((detail, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                      {detail}
-                    </li>
-                  ))}
-                </ul>              </div>
+                <div className="mt-auto flex items-center text-accent font-medium group-hover:underline">
+                  Sertifikata Bax
+                  <ArrowUpRight className="w-4 h-4 ml-2" />
+                </div>
+              </a>
             ))}
           </div>
         </div>
@@ -160,8 +93,8 @@ export default function CertificatesPage() {
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4">Tərəfdaşlarımız</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
+            <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">Tərəfdaşlarımız</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
               Beynəlxalq Tərəfdaşlar
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -176,10 +109,10 @@ export default function CertificatesPage() {
                 key={index}
                 className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow"
               >
-                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-blue-600">{partner.name[0]}</span>
+                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent-light/20 to-accent-light/5 rounded-xl flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-accent">{partner.name[0]}</span>
                 </div>
-                <h3 className="font-semibold text-[#0f172a] mb-1">{partner.name}</h3>
+                <h3 className="font-semibold text-primary mb-1">{partner.name}</h3>
                 <p className="text-sm text-gray-500">{partner.country}</p>
               </div>
             ))}
@@ -188,16 +121,16 @@ export default function CertificatesPage() {
       </section>
 
       {/* Quality Promise */}
-      <section className="py-24 bg-[#0f172a] text-white">
+      <section className="py-24 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <Award className="w-16 h-16 text-blue-400 mx-auto mb-6" />
+            <Award className="w-16 h-16 text-accent-light mx-auto mb-6" />
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               Keyfiyyət Zəmanətimiz
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
               KasperLift MMC olaraq, hər bir layihəmizdə ən yüksək keyfiyyət standartlarını
-              təmin etmək üçün çalışırıq. Beynəlxalq sertifikatlarımız və 13+ illik təcrübəmiz
+              təmin etmək üçün çalışırıq. Beynəlxalq sertifikatlarımız və 16+ illik təcrübəmiz
               ilə müştərilərimizə etibarlılıq zəmanəti veririk.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

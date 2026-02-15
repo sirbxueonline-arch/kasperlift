@@ -34,13 +34,13 @@ export default function Header() {
       }`}
     >
       {/* Top bar */}
-      <div className="bg-[#0f172a] text-white py-2 hidden md:block">
+      <div className="bg-primary text-white py-2 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <span>Mon-Fri: 09:00 - 18:00</span>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="tel:+994502096440" className="flex items-center hover:text-blue-400 transition-colors">
+            <a href="tel:+994502096440" className="flex items-center hover:text-accent-light transition-colors">
               <Phone className="w-4 h-4 mr-1" />
               +994 50 209 64 40
             </a>
@@ -71,10 +71,10 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-[#1e293b] hover:text-blue-600 font-medium transition-colors relative group"
+                  className="text-primary hover:text-accent font-medium transition-colors relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
                 </Link>
               ))}
             </div>
@@ -83,7 +83,7 @@ export default function Header() {
             <div className="hidden lg:block">
               <Link
                 href="/contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all hover:shadow-lg hover:shadow-blue-600/25 flex items-center"
+                className="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-full font-medium transition-all hover:shadow-lg hover:shadow-accent/25 flex items-center"
               >
                 Qiymət Al
                 <ArrowUpRight className="w-4 h-4 ml-2" />
@@ -97,9 +97,9 @@ export default function Header() {
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <X className="w-6 h-6 text-[#1e293b]" />
+                <X className="w-6 h-6 text-primary" />
               ) : (
-                <Menu className="w-6 h-6 text-[#1e293b]" />
+                <Menu className="w-6 h-6 text-primary" />
               )}
             </button>
           </div>
@@ -116,7 +116,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block text-lg font-medium text-[#1e293b] hover:text-blue-600 transition-colors py-2"
+                className="block text-lg font-medium text-primary hover:text-accent transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
@@ -124,14 +124,14 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all mt-4"
+              className="block w-full text-center bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-full font-medium transition-all mt-4"
               onClick={() => setIsMenuOpen(false)}
             >
               Qiymət Al
             </Link>
             <div className="pt-4 border-t border-gray-100">
-              <a href="tel:+994502096440" className="flex items-center text-[#1e293b] py-2">
-                <Phone className="w-5 h-5 mr-2 text-blue-600" />
+              <a href="tel:+994502096440" className="flex items-center text-primary py-2">
+                <Phone className="w-5 h-5 mr-2 text-accent" />
                 +994 50 209 64 40
               </a>
             </div>

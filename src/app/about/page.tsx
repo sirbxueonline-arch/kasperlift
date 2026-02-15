@@ -25,11 +25,10 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2011", title: "KasperLift Yaranışı", description: "Şirkətin əsası qoyuldu" },
-  { year: "2013", title: "İlk Böyük Layihə", description: "100+ lift quraşdırıldı" },
-  { year: "2015", title: "Beynəlxalq Sertifikatlar", description: "ISO və CE sertifikatları alındı" },
-  { year: "2018", title: "Komanda Genişləndi", description: "50+ işçi sayına çatdıq" },
-  { year: "2021", title: "500+ Layihə", description: "500-dən çox layihə tamamlandı" },
+  { year: "2020", title: "KasperLift Yaranışı", description: "Şirkətin əsası qoyuldu" },
+  { year: "2021", title: "İlk Böyük Layihə", description: "100+ lift quraşdırıldı" },
+  { year: "2022", title: "Beynəlxalq Sertifikatlar", description: "ISO və CE sertifikatları alındı" },
+  { year: "2023", title: "Komanda Genişləndi", description: "50+ işçi sayına çatdıq" },
   { year: "2024", title: "Liderlik", description: "Azərbaycanın aparıcı lift şirkəti" },
 ];
 
@@ -37,12 +36,12 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen pt-32">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-accent to-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">Haqqımızda</h1>
-            <p className="text-xl text-blue-100 leading-relaxed">
-              2011-ci ildən fəaliyyət göstərən KasperLift MMC, Azərbaycanın lift və eskalator
+            <p className="text-xl text-accent-light/90 leading-relaxed">
+              2020-ci ildən fəaliyyət göstərən KasperLift MMC, Azərbaycanın lift və eskalator
               sektorunun aparıcı şirkətlərindən biridir. Keyfiyyət, təhlükəsizlik və müştəri
               məmnuniyyəti bizim əsas dəyərlərimizdir.
             </p>
@@ -55,14 +54,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4">Bizim Hekayəmiz</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-6">
-                13+ İllik Etibarlı
-                <span className="text-blue-600"> Təcrübə</span>
+              <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">Bizim Hekayəmiz</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-6">
+                16+ İllik Etibarlı
+                <span className="text-accent"> Təcrübə</span>
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  KasperLift MMC 2011-ci ildə təsis edilmiş və bu günədək Azərbaycanın lift
+                  KasperLift MMC 2020-ci ildə təsis edilmiş və bu günədək Azərbaycanın lift
                   və eskalator sektorunda fəaliyyət göstərir. Şirkətimiz qısa müddət ərzində
                   keyfiyyətli xidmətləri və peşəkar yanaşması ilə tanınaraq, sektorun
                   lider şirkətlərindən birinə çevrilmişdir.
@@ -82,7 +81,7 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-2">
+              <div className="bg-gradient-to-br from-accent-light/20 to-accent-light/5 rounded-3xl p-2">
                 <div className="aspect-[4/3] relative bg-white rounded-2xl shadow-lg overflow-hidden">
                   <img 
                     src="/images/about-office.svg" 
@@ -104,8 +103,8 @@ export default function AboutPage() {
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4">Dəyərlərimiz</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
+            <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">Dəyərlərimiz</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
               Bizi Fərqləndirən Dəyərlər
             </h2>
           </div>
@@ -116,10 +115,10 @@ export default function AboutPage() {
                 key={index}
                 className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow"
               >
-                <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                  <value.icon className="w-7 h-7 text-blue-600" />
+                <div className="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-6">
+                  <value.icon className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0f172a] mb-3">{value.title}</h3>
+                <h3 className="text-xl font-bold text-primary mb-3">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
@@ -139,7 +138,7 @@ export default function AboutPage() {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-blue-200 hidden md:block" />
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-accent-light/30 hidden md:block" />
 
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
@@ -153,21 +152,21 @@ export default function AboutPage() {
                     <div className={`bg-white rounded-2xl p-6 shadow-lg border border-gray-100 ${
                       index % 2 === 0 ? "md:mr-8" : "md:ml-8 md:text-left"
                     }`}>
-                      <div className="text-3xl font-bold text-blue-600 mb-2">{milestone.year}</div>
-                      <h3 className="text-xl font-bold text-[#0f172a] mb-2">{milestone.title}</h3>
+                      <div className="text-3xl font-bold text-accent mb-2">{milestone.year}</div>
+                      <h3 className="text-xl font-bold text-primary mb-2">{milestone.title}</h3>
                       <p className="text-gray-600">{milestone.description}</p>
                     </div>
                   </div>
 
                   <div className="relative z-10 my-4 md:my-0">
-                    <div className="w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg" />
+                    <div className="w-4 h-4 bg-accent rounded-full border-4 border-white shadow-lg" />
                   </div>
 
                   <div className="w-full md:w-1/2 md:pl-12 hidden md:block">
                     {index % 2 === 0 ? null : (
                       <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 ml-8">
-                        <div className="text-3xl font-bold text-blue-600 mb-2">{milestone.year}</div>
-                        <h3 className="text-xl font-bold text-[#0f172a] mb-2">{milestone.title}</h3>
+                        <div className="text-3xl font-bold text-accent mb-2">{milestone.year}</div>
+                        <h3 className="text-xl font-bold text-primary mb-2">{milestone.title}</h3>
                         <p className="text-gray-600">{milestone.description}</p>
                       </div>
                     )}

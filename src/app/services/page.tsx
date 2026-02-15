@@ -140,17 +140,17 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen pt-32">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-accent to-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <nav className="flex items-center text-sm text-blue-100 mb-6">
+            <nav className="flex items-center text-sm text-accent-light/90 mb-6">
               <Link href="/" className="hover:text-white transition-colors">Ana Səhifə</Link>
               <ChevronRight className="w-4 h-4 mx-2" />
               <span className="text-white">Xidmətlər</span>
             </nav>
 
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">Xidmətlərimiz</h1>
-            <p className="text-xl text-blue-100 leading-relaxed">
+            <p className="text-xl text-accent-light/90 leading-relaxed">
               Lift və eskalator sistemləri ilə bağlı satışdan quraşdırmaya,
               texniki xidmətdən modernləşdirməyə qədər tam xidmət spektri.
             </p>
@@ -162,8 +162,8 @@ export default function ServicesPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4">Hərtərəfli Xidmət</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">
+            <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">Hərtərəfli Xidmət</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
               Professional Lift Xidmətləri
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -179,10 +179,10 @@ export default function ServicesPage() {
                 href={`/services#${service.id}`}
                 className="group bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100"
               >
-                <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 bg-accent text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <service.icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0f172a] mb-2">{service.title}</h3>
+                <h3 className="text-xl font-bold text-primary mb-2">{service.title}</h3>
                 <p className="text-gray-600 text-sm">{service.subtitle}</p>
               </Link>
             ))}
@@ -205,26 +205,26 @@ export default function ServicesPage() {
                 {/* Service Content */}
                 <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                      <service.icon className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
+                      <service.icon className="w-6 h-6 text-accent" />
                     </div>
-                    <span className="text-blue-600 font-semibold">0{index + 1}</span>
+                    <span className="text-accent font-semibold">0{index + 1}</span>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-[#0f172a] mb-2">{service.title}</h2>
-                  <p className="text-blue-600 font-medium mb-4">{service.subtitle}</p>
+                  <h2 className="text-3xl font-bold text-primary mb-2">{service.title}</h2>
+                  <p className="text-accent font-medium mb-4">{service.subtitle}</p>
                   <p className="text-gray-600 mb-8">{service.description}</p>
 
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
-                      <h3 className="font-semibold text-[#0f172a] mb-3 flex items-center">
-                        <CheckCircle className="w-5 h-5 text-blue-600 mr-2" />
+                      <h3 className="font-semibold text-primary mb-3 flex items-center">
+                        <CheckCircle className="w-5 h-5 text-accent mr-2" />
                         Xidmətlərimiz
                       </h3>
                       <ul className="space-y-2">
                         {service.features.map((feature, idx) => (
                           <li key={idx} className="text-gray-600 text-sm flex items-start">
-                            <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 mt-1.5 flex-shrink-0" />
+                            <span className="w-1.5 h-1.5 bg-accent rounded-full mr-2 mt-1.5 flex-shrink-0" />
                             {feature}
                           </li>
                         ))}
@@ -232,7 +232,7 @@ export default function ServicesPage() {
                     </div>
 
                     <div className="bg-white rounded-2xl p-6 shadow-sm">
-                      <h3 className="font-semibold text-[#0f172a] mb-3">Avantajlar</h3>
+                      <h3 className="font-semibold text-primary mb-3">Avantajlar</h3>
                       <ul className="space-y-2">
                         {service.benefits.map((benefit, idx) => (
                           <li key={idx} className="text-gray-600 text-sm flex items-start">
@@ -247,13 +247,13 @@ export default function ServicesPage() {
 
                 {/* Service Image */}
                 <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-8">
+                  <div className="bg-gradient-to-br from-accent-light/20 to-accent-light/5 rounded-3xl p-8">
                     <div className="aspect-[4/3] bg-white rounded-2xl shadow-lg flex items-center justify-center">
                       <div className="text-center p-8">
-                        <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center shadow-xl mb-6">
+                        <div className="w-32 h-32 mx-auto bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center shadow-xl mb-6">
                           <service.icon className="w-16 h-16 text-white" />
                         </div>
-                        <h3 className="text-xl font-bold text-[#0f172a]">{service.title}</h3>
+                        <h3 className="text-xl font-bold text-primary">{service.title}</h3>
                       </div>
                     </div>
                   </div>

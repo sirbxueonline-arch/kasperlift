@@ -155,17 +155,17 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen pt-32">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-accent to-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <nav className="flex items-center text-sm text-blue-100 mb-6">
+            <nav className="flex items-center text-sm text-accent-light/90 mb-6">
               <Link href="/" className="hover:text-white transition-colors">Ana Səhifə</Link>
               <ChevronRight className="w-4 h-4 mx-2" />
               <span className="text-white">Məhsullar</span>
             </nav>
 
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">Məhsullarımız</h1>
-            <p className="text-xl text-blue-100 leading-relaxed">
+            <p className="text-xl text-accent-light/90 leading-relaxed">
               Keyfiyyətli lift və eskalator sistemləri. Yaşayış binalarından sənaye
               obyektlərinə qədər bütün ehtiyaclara uyğun həllər.
             </p>
@@ -187,7 +187,7 @@ export default function ProductsPage() {
               >
                 {/* Product Image */}
                 <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-8">
+                  <div className="bg-gradient-to-br from-accent-light/20 to-accent-light/5 rounded-3xl p-8">
                     <div className="aspect-[4/3] bg-white rounded-2xl shadow-lg flex items-center justify-center overflow-hidden">
                       <img 
                         src={product.image} 
@@ -201,23 +201,23 @@ export default function ProductsPage() {
                 {/* Product Info */}
                 <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                      <product.icon className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
+                      <product.icon className="w-6 h-6 text-accent" />
                     </div>
-                    <span className="text-blue-600 font-semibold">0{index + 1}</span>
+                    <span className="text-accent font-semibold">0{index + 1}</span>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-[#0f172a] mb-4">{product.title}</h2>
+                  <h2 className="text-3xl font-bold text-primary mb-4">{product.title}</h2>
                   <p className="text-gray-600 text-lg mb-6">{product.fullDesc}</p>
 
                   {/* Specs */}
                   <div className="bg-slate-50 rounded-2xl p-6 mb-6">
-                    <h3 className="font-semibold text-[#0f172a] mb-4">Texniki Xüsusiyyətlər</h3>
+                    <h3 className="font-semibold text-primary mb-4">Texniki Xüsusiyyətlər</h3>
                     <div className="grid grid-cols-2 gap-4">
                       {product.specs.map((spec, idx) => (
                         <div key={idx}>
                           <div className="text-sm text-gray-500">{spec.label}</div>
-                          <div className="font-medium text-[#0f172a]">{spec.value}</div>
+                          <div className="font-medium text-primary">{spec.value}</div>
                         </div>
                       ))}
                     </div>
@@ -225,11 +225,11 @@ export default function ProductsPage() {
 
                   {/* Features */}
                   <div className="mb-6">
-                    <h3 className="font-semibold text-[#0f172a] mb-4">Əsas Xüsusiyyətlər</h3>
+                    <h3 className="font-semibold text-primary mb-4">Əsas Xüsusiyyətlər</h3>
                     <ul className="grid sm:grid-cols-2 gap-3">
                       {product.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-gray-600">
-                          <Check className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0" />
+                          <Check className="w-5 h-5 text-accent mr-2 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
@@ -241,7 +241,7 @@ export default function ProductsPage() {
                     {product.applications.map((app, idx) => (
                       <span
                         key={idx}
-                        className="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium"
+                        className="bg-accent/5 text-accent px-4 py-2 rounded-full text-sm font-medium"
                       >
                         {app}
                       </span>

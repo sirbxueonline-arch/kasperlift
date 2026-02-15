@@ -21,14 +21,14 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0f172a] text-white">
+    <footer className="bg-primary text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
             <Link href="/" className="inline-block mb-6">
-              <div className="relative h-28 w-80 bg-white/5 rounded-lg p-2">
+              <div className="relative h-40 w-96 bg-white/5 rounded-lg p-2">
                  <img
                   src="/images/logo.png"
                   alt="KasperLift"
@@ -37,7 +37,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              13+ illik təcrübə ilə Azərbaycanın aparıcı lift və eskalator şirkəti.
+              16+ illik təcrübə ilə Azərbaycanın aparıcı lift və eskalator şirkəti.
               Keyfiyyətli məhsullar və professional xidmət.
             </p>
             <div className="flex space-x-4">
@@ -45,7 +45,7 @@ export default function Footer() {
                 href="https://www.facebook.com/kasper.lift/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
@@ -53,7 +53,7 @@ export default function Footer() {
                 href="https://www.instagram.com/kasper_lift_llc/?hl=en" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -61,7 +61,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/kasper-lift/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -103,13 +103,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Əlaqə</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-accent-light mt-1 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
                   STN Business Center, 10Q Ələsgər Qayıbov küç, AZ 1029, Bakı, Azərbaycan
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-accent-light flex-shrink-0" />
                 <div className="text-sm">
                   <div className="text-gray-300">Satış: +994 50 209 64 40</div>
                   <div className="text-gray-300">Texniki: +994 77 272 50 50</div>
@@ -117,7 +117,7 @@ export default function Footer() {
               </div>
 
               <div className="flex items-center space-x-3">
-                <Clock className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-accent-light flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
                   B.e - Cümə: 09:00 - 18:00
                 </span>

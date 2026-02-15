@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "KasperLift MMC | Lift və Eskalator Sistemləri",
-  description: "KasperLift MMC - Azərbaycanın aparıcı lift və eskalator şirkəti. 13+ illik təcrübə ilə satış, quraşdırma və xidmət.",
+  description: "KasperLift MMC - Azərbaycanın aparıcı lift və eskalator şirkəti. 16+ illik təcrübə ilə satış, quraşdırma və xidmət.",
   keywords: "lift, eskalator, avtomatik qapı, Bakı, Azərbaycan, KasperLift, lift quraşdırma, lift xidmət",
   openGraph: {
     title: "KasperLift MMC | Lift və Eskalator Sistemləri",
-    description: "13+ illik təcrübə ilə professional lift və eskalator həlləri",
+    description: "16+ illik təcrübə ilə professional lift və eskalator həlləri",
     type: "website",
   },
 };
