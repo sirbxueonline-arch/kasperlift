@@ -20,7 +20,7 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    email: "",
+
     service: "",
     message: "",
   });
@@ -88,18 +88,7 @@ export default function ContactPage() {
             </div>
 
             {/* Email */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-              <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                <Mail className="w-7 h-7 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-[#0f172a] mb-4">E-poçt</h3>
-              <div>
-                <p className="text-sm text-gray-500 mb-1">Ümumi sorğular</p>
-                <a href="mailto:[email protected]" className="text-blue-600 font-semibold hover:underline break-all">
-                  [email protected]
-                </a>
-              </div>
-            </div>
+
 
             {/* Address */}
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
@@ -172,20 +161,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                        E-poçt
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
-                        placeholder="[email protected]"
-                      />
-                    </div>
+
                     <div>
                       <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
                         Xidmət Növü

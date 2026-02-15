@@ -6,6 +6,7 @@ const products = [
     id: "passenger",
     icon: Users,
     title: "Sərnişin Liftləri",
+    image: "/images/2.jpeg",
     shortDesc: "Yaşayış və kommersiya binaları üçün müasir dizaynlı liftlər",
     fullDesc: "Sərnişin liftlərimiz yaşayış kompleksləri, ofis binaları, otellər və digər kommersiya obyektləri üçün nəzərdə tutulub. Müasir texnologiyalar, enerji effektivliyi və yüksək təhlükəsizlik standartları ilə təchiz edilib.",
     specs: [
@@ -29,7 +30,11 @@ const products = [
     id: "freight",
     icon: Package,
     title: "Yük Liftləri",
+    image: "/images/7.png",
     shortDesc: "Ağır yük daşınması üçün güclü və dayanıqlı həllər",
+    // ... (omitting bulky middle content if safely possible, but replace_file_content needs exact match. 
+    // Wait, the tool definition says "TargetContent: This must be a unique substring". 
+    // I can do them separately if I want to be safer or just do a big block. The big block is safer context-wise.)
     fullDesc: "Sənaye və kommersiya obyektləri üçün nəzərdə tutulmuş yük liftlərimiz, ağır yük daşınması tələblərini təmin edir. Yüksək davamlılıq və etibarlılıq ilə fərqlənir.",
     specs: [
       { label: "Yük qaldırma", value: "500 - 5000 kg" },
@@ -52,6 +57,7 @@ const products = [
     id: "kitchen",
     icon: Utensils,
     title: "Mətbəx Liftləri",
+    image: "/images/1.jpeg",
     shortDesc: "Restoran və otellər üçün qida daşınma həlləri",
     fullDesc: "Restoran, otel və ictimai iaşə obyektləri üçün xüsusi dizayn edilmiş mətbəx liftləri. Qida təhlükəsizliyi standartlarına uyğun, sürətli və effektiv daşınma təmin edir.",
     specs: [
@@ -75,6 +81,7 @@ const products = [
     id: "automatic-doors",
     icon: DoorOpen,
     title: "Avtomatik Qapılar",
+    image: "/images/3.jpeg",
     shortDesc: "Hərəkət sensorlu müasir qapı sistemləri",
     fullDesc: "Bina girişləri və daxili məkanlar üçün avtomatik qapı sistemləri. Həm estetik, həm funksional dizayn ilə müxtəlif arxitektur tələblərinə uyğun həllər.",
     specs: [
@@ -98,6 +105,7 @@ const products = [
     id: "escalator",
     icon: ArrowUp,
     title: "Eskalatorlar",
+    image: "/images/5.jpeg",
     shortDesc: "Yüksək sərnişin axını üçün səmərəli həllər",
     fullDesc: "Alış-veriş mərkəzləri, hava limanları və böyük ictimai binalar üçün eskalator sistemləri. Yüksək sərnişin tutumu və dayanıqlıq ilə fərqlənir.",
     specs: [
@@ -121,6 +129,7 @@ const products = [
     id: "travolator",
     icon: ArrowUpDown,
     title: "Travolatorlar",
+    image: "/images/6.png",
     shortDesc: "Səviyyəli səyahət üçün horizontal nəqliyyat",
     fullDesc: "Hava limanları və böyük ticarət mərkəzləri üçün horizontallaşdırılmış hərəkət yolları. Uzun məsafələri rahat və sürətli qət etmək üçün ideal həll.",
     specs: [
@@ -179,13 +188,12 @@ export default function ProductsPage() {
                 {/* Product Image */}
                 <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-8">
-                    <div className="aspect-[4/3] bg-white rounded-2xl shadow-lg flex items-center justify-center">
-                      <div className="text-center p-8">
-                        <div className="w-24 h-24 mx-auto bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center shadow-xl mb-6">
-                          <product.icon className="w-12 h-12 text-white" />
-                        </div>
-                        <h3 className="text-xl font-bold text-[#0f172a]">{product.title}</h3>
-                      </div>
+                    <div className="aspect-[4/3] bg-white rounded-2xl shadow-lg flex items-center justify-center overflow-hidden">
+                      <img 
+                        src={product.image} 
+                        alt={product.title}
+                        className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
                   </div>
                 </div>

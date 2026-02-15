@@ -37,16 +37,16 @@ export default function WhyChooseUs() {
   return (
     <section className="py-24 bg-[#0f172a] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-4xl mx-auto">
           {/* Content */}
           <div className="space-y-8">
-            <div>
+            <div className="text-center">
               <span className="inline-block text-blue-400 font-semibold text-sm tracking-wider uppercase mb-4">Niyə KasperLift?</span>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6">
                 Azərbaycanın Aparıcı Lift
                 <span className="text-blue-400"> Şirkəti</span>
               </h2>
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto">
                 2011-ci ildən fəaliyyət göstərən KasperLift MMC, Azərbaycanın lift və eskalator
                 bazarının lider şirkətlərindən biridir. Müştəri məmnuniyyəti və təhlükəsizlik
                 bizim əsas prioritetimizdir.
@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {reasons.map((reason, index) => (
-                <div key={index} className="flex items-start space-x-4">
+                <div key={index} className="flex items-start space-x-4 bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
                   <div className="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center flex-shrink-0">
                     <reason.icon className="w-6 h-6 text-blue-400" />
                   </div>
@@ -68,9 +68,9 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Certificates */}
-            <div className="pt-6 border-t border-white/10">
+            <div className="pt-6 border-t border-white/10 text-center">
               <h3 className="font-semibold mb-4">Sertifikatlarımız</h3>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 justify-center">
                 {certificates.map((cert, index) => (
                   <span
                     key={index}
@@ -82,29 +82,6 @@ export default function WhyChooseUs() {
                 ))}
               </div>
             </div>
-          </div>
-
-          {/* Image/Visual */}
-          <div className="relative">
-            <div className="relative bg-gradient-to-br from-blue-600/20 to-blue-800/20 rounded-3xl p-2">
-              <div className="aspect-[4/3] relative bg-white/5 rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10">
-                <img 
-                  src="/images/why-choose-us.svg" 
-                  alt="Quality and Safety" 
-                  className="object-cover w-full h-full opacity-90"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                  <div className="text-center p-8">
-                    <h3 className="text-3xl font-bold mb-2 text-white">Etibarlılıq</h3>
-                    <p className="text-blue-200">13+ il keyfiyyət və təhlükəsizlik</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Decorative Elements */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-600/20 rounded-full blur-2xl" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/20 rounded-full blur-2xl" />
           </div>
         </div>
       </div>

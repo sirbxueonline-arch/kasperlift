@@ -38,9 +38,6 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <span>Mon-Fri: 09:00 - 18:00</span>
-            <a href="mailto:[email protected]" className="hover:text-blue-400 transition-colors">
-              [email protected]
-            </a>
           </div>
           <div className="flex items-center space-x-4">
             <a href="tel:+994502096440" className="flex items-center hover:text-blue-400 transition-colors">

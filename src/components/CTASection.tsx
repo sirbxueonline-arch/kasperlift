@@ -41,11 +41,6 @@ export default function CTASection() {
           </div>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 text-blue-100">
-            <a href="mailto:[email protected]" className="flex items-center hover:text-white transition-colors">
-              <Mail className="w-5 h-5 mr-2" />
-              [email protected]
-            </a>
-            <div className="hidden sm:block w-px h-6 bg-blue-400/50" />
             <div>Mon-Fri: 09:00 - 18:00</div>
           </div>
         </div>
