@@ -17,7 +17,7 @@ const features = [
   {
     icon: Headphones,
     title: "24/7 Texniki Dəstək",
-    description: "Gündüldən asılı olmayaraq, ilin 365 günü fasiləsiz texniki dəstək və təcili təmir xidməti.",
+    description: "Günün vaxtından asılı olmayaraq, ilin 365 günü fasiləsiz texniki dəstək və təcili təmir xidməti.",
     color: "bg-purple-100 text-purple-600",
   },
   {
