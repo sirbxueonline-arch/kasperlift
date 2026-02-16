@@ -105,7 +105,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent-light mt-1 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
-                  STN Business Center, 10Q Ələsgər Qayıbov küç, AZ 1029, Bakı, Azərbaycan
+                  Ələskər Qayıbov Küçəsi 10, Bakı, AZ
                 </span>
               </div>
               <div className="flex items-center space-x-3">

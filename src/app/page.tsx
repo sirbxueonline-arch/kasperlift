@@ -5,6 +5,7 @@ import ServicesOverview from "@/components/ServicesOverview";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Stats from "@/components/Stats";
 import CTASection from "@/components/CTASection";
+import Map from "@/components/Map";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ServicesOverview />
       <WhyChooseUs />
       <CTASection />
+      <Map />
     </div>
   );
 }

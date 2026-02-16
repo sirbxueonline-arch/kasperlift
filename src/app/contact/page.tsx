@@ -97,9 +97,8 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-primary mb-4">Ünvan</h3>
               <p className="text-gray-600">
-                STN Business Center<br />
-                10Q Ələsgər Qayıbov küç.<br />
-                AZ 1029, Bakı, Azərbaycan
+                Ələskər Qayıbov Küçəsi 10<br />
+                Bakı, AZ
               </p>
             </div>
           </div>
@@ -217,11 +216,10 @@ export default function ContactPage() {
                     <MapPin className="w-16 h-16 text-accent mx-auto mb-4" />
                     <h3 className="text-xl font-bold text-primary mb-2">Xəritədə Göstər</h3>
                     <p className="text-gray-600 mb-4">
-                      STN Business Center<br />
-                      10Q Ələsgər Qayıbov küçəsi
+                      Ələskər Qayıbov Küçəsi 10
                     </p>
                     <a
-                      href="https://maps.google.com/?q=STN+Business+Center+Baku"
+                      href="https://maps.google.com/maps?q=Ələskər+Qayıbov+Küçəsi+10,+Bakı,+AZ"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-accent font-semibold hover:underline"
